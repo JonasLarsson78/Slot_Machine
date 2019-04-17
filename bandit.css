@@ -6,6 +6,10 @@ body {
     background: url(./slot_pic/back_slot.jpg);
     background-size: cover;
 }
+@font-face {
+    font-family: digib;
+    src: url(./DS-DIGIB.TTF);
+  }
 #container {
     display: flex;
     text-align: center;
@@ -89,14 +93,14 @@ body {
     font-size: 30px;
     color: red;
     flex: 50%;
-    font-family: "DS-Digital";
+    font-family: digib;
 }
 #credits {
     margin-top: 30px;
     font-size: 30px;
     color: red;
     flex: 50%;
-    font-family: "DS-Digital";
+    font-family: digib;
 }
 .slotImg {
     width: 150px;
@@ -186,7 +190,7 @@ input[type='number'] {
     text-align: center;
     color: red;
     background-color: transparent;
-    font-family: "DS-Digital";
+    font-family: digib;
     font-size: 30px;
     border: none;
 }
