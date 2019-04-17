@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="bandit.css">
+<script type="text/javascript" src="bandit.js" defer></script>
+<title>Slot Machine</title>
+</head>
+<body>
+<div id="jackpot"></div>
+<div id="container">
+  <div id="item">
+    <div class="flipper">
+      <div id="line1" ></div>
+    </div>
+    <div class="back"></div>
+    <div class="flipper">
+      <div id="line2" ></div>
+    </div>
+    <div class="back"></div>
+    <div class="flipper">
+      <div id="line3"></div>
+    </div>
+    <div class="back"></div>
+    <div class="flipper">
+      <div id="line4"></div>
+    </div>
+    <div class="back"></div>
+    <input id="myBtn" type="button" value="Play" onClick="checkCredits()">
+    <div id="result"></div>
+    <div id="credits"></div>
+    <input type="button" id="styleBtn1" value="Checkout" onClick="payOut()">
+    <input type="number" value="1" id="numInput" min="1" max="100" >
+    <input type="button" id="styleBtn2" value="Insert credit" onClick="payIn()">
+    <input type="text" value="Last checkout" id="lastCheckout" readonly>
+  </div>
+</div>
+</body>
+</html>

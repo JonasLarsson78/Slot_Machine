@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: url(./slot_pic/back_slot.jpg);
+    background-size: cover;
+}
+#container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+#item {
+    width: 700px;
+    height: 550px;
+    border: 3px solid;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    background: url( ./slot_pic/shattered-island.gif);
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0px black;
+    border-radius: 20px;
+}
+#line1 {
+    width: 150px;
+    height: 220px;
+    font-size: 150px;
+    border: 1px solid black;
+    font-family: 'Candal', sans-serif;
+    background: white;
+    box-shadow: 10px 10px 5px 0px black;
+    border-radius: 20px 0px 0px 20px;
+}
+#line2 {
+    width: 150px;
+    height: 220px;
+    font-size: 150px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid;
+    font-family: 'Candal', sans-serif;
+    background: white;
+    box-shadow: 10px 10px 5px 0px black;
+    transition-delay: 2s;
+}
+#line3 {
+    width: 150px;
+    height: 220px;
+    font-size: 150px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-family: 'Candal', sans-serif;
+    background: white;
+    box-shadow: 10px 10px 5px 0px black;
+}
+#line4 {
+    width: 150px;
+    height: 220px;
+    font-size: 150px;
+    border: 1px solid black;
+    font-family: 'Candal', sans-serif;
+    background: white;
+    box-shadow: 10px 10px 5px 0px black;
+    border-radius: 0px 20px 20px 0px;
+}
+#myBtn {
+    display: inline-block;
+    width: 500px;
+    height: 50px;
+    background: green;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    flex-basis: auto;
+    border-radius: 5px;
+}
+#myBtn:hover {
+    background: #31981F;
+}
+#result {
+    margin-top: 50px;
+    font-size: 30px;
+    color: red;
+    flex: 50%;
+    font-family: "DS-Digital";
+}
+#credits {
+    margin-top: 30px;
+    font-size: 30px;
+    color: red;
+    flex: 50%;
+    font-family: "DS-Digital";
+}
+.slotImg {
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+}
+#styleBtn1 {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    margin: 30px;
+    bottom: 30px;
+    border-radius: 10px;
+    align-content: center;
+}
+#styleBtn1:hover {
+    background: #FF3F42;
+}
+#styleBtn2 {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: blue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px 0px black;
+    bottom: 30px;
+    border-radius: 0px 10px 10px 0px;
+    align-content: center;
+    z-index: 100;
+}
+#styleBtn2:hover {
+    background: #441FFF;
+}
+#numInput {
+    display: inline-block;
+    font-size: 20px;
+    width: 80px;
+    height: 48px;
+    box-shadow: 10px 10px 5px 0px black;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+}
+@keyframes blinker {
+ 50% {
+ opacity: 0;
+}
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+}
+.flip-container {
+    perspective: 1000px;
+}
+.flip-container:active .flipper, .flip-container.hover .flipper {
+    transform: rotateX(360deg);
+}
+.flip-container, .back {
+    width: 320px;
+    height: 80px;
+}
+.flipper {
+    transition: 0.1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.back {
+    transform: rotateX(360deg);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#lastCheckout {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    color: red;
+    background-color: transparent;
+    font-family: "DS-Digital";
+    font-size: 30px;
+    border: none;
+}
+#jackpot {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+img[name=jackpot] {
+    width: 500px;
+}
